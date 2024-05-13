@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+::selection {
+	background: #d993d2;
+}
+
+/* Links */
+
+a {
+	transition: .3s;
+}
+
+a:hover {
+	color: #EC008C;
+	text-shadow: 0px 0px 2px #EC008C;
+}
+
+a:link {
+	color: #EC008C;
+}
+
+a:visited {
+	color: #EC008C;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 1em;
+	background: inherit;
+	transition: background 1s;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4E4E4E;
+    border-radius: 10px;
+	border: 6px solid transparent;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #ababab;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Header */
+
+.header {
+/*
+	position: -webkit-sticky;
+	position: sticky;
+*/
+	top: 0;
+	width: 100%;
+	height: 85px;
+	display: block;
+	background-color: #101010;
+}
+
+.header-content {
+	width: 80%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo {
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.logo h1 {
+	color: #ff66c1;
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 35px;
+}
+
+.logo h1 a {
+	color: inherit;
+	transition: 0.4s;
+}
+
+.navigation {
+	height: 100%;
+	float: right;
+}
+
+.navigation a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0px 20px;
+	transition: .3s;
+}
+
+.navigation a li {
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+
+	font-family: freight-sans-pro, sans-serif;
+	font-style: normal;
+	font-size: 16px;
+}
+
+.navigation a:hover {
+	background: #BC8201;
+	font-weight: 1000;
+	transition: .2s;
+}
+
+/* Stuff below header */
+h1 {
+	color: black;
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: bolder;
+	font-size: 35px;
+
+	font-style: normal;
+	padding-bottom: 0.2em;
+}
+
+h2 {
+	color: black;
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: semibold;
+	font-size: 24px;
+
+	font-style: normal;
+	padding-bottom: 0.2em;
+}
+
+.main {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 2%;
+}
+
+body, p {
+	font-family: freight-sans-pro, serif;
+	font-size: 19px;
+	background-color: white;
+	color: black;
+}
+
+.listofstuff {
+	font-family: freight-sans-pro, sans-serif;
+	font-style: normal;
+	text-align: left;
+	padding-top: 1em;
+}
+
+td, th {
+	padding: 4px;
+	line-height: 120%;
+}
+
+th {
+	color: #c4820e;
+	font-family: freight-sans-pro, sans-serif;
+	font-weight: semibold;
+	text-transform: uppercase;
+}
+
+.degree {
+	font-size: 90%;
+}
+
+img {
+	margin: 5px;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 80%;
+}
+
+article {
+	margin-top: 10em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40em;
+}
+
+article h1 {
+	font-family: Computer Modern Sans, sans-serif;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+}
+
+article h2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Computer Modern Sans, sans-serif;
+	color: #fdb515;
+
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+}
+
+article p {
+	font-family: Computer Modern Serif, serif;
+}
+
+.prereq {
+	font-style: italic;
+	padding-bottom: 1em;
+	font-size: 90%;
+}
+
+figure {
+	padding: 1em;
+	width: 100%;
+	margin: 5px;
+	background-color: #161616;
+}
+
+figcaption {
+	font-family: Computer Modern Sans, sans-serif;
+	font-size: 90%;
+}
+
+article pre {
+	font-size: 70%;
+
+	padding: 1em;
+	width: 100%;
+	margin: 5px;
+	background-color: #161616;
+
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+
+article code {
+	font-size: 90%;
+}
+
+article ul {
+	font-family: Computer Modern Serif, serif;
+	padding-left: 3em;
+    text-indent: -3em;
+	padding-bottom: 3em;
+}
+
+.theorem {
+	font-family: Computer Modern Sans, sans-serif;
+	background-color: #252525;
+	width: auto;
+	border: 1px solid white;
+	padding: 20px;
+	margin: 5px;
+}
+
+.tigersvdslideshow {
+	height: 350px;
+	overflow-y: scroll;
+	padding-right: 17px;
+	box-sizing: content-box;
+
+	scroll-snap-type: y mandatory;
+	display: grid;
+	place-items: center;
+}
+
+.tigersvdslideshow::-webkit-scrollbar{
+    display: none;
+  }
+
+.tigersvdslideshow img {
+	scroll-snap-align: center;
+	scroll-snap-stop: always;
+}
+
+@media (max-width: 1050px) {
+	.header {
+		height: 95px;
+	}
+	article {
+		margin-left: 10%;
+		margin-right: 10%;
+		width: auto;
+	}
+
+}
